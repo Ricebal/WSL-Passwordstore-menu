@@ -9,7 +9,7 @@ You can run the script from an [AutoHotKey](https://www.autohotkey.com/) script 
 ```
 <#+p::
 { 
-	Run("wt -p Ubuntu bash ~/.scripts/passmenu.sh")
+	Run("wt -p Ubuntu bash /path/to/passmenu.sh")
 	return
 }
 ```
