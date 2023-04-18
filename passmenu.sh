@@ -4,4 +4,4 @@ pass "$(find $HOME/.password-store/ -type f -iname "*.gpg" | sed "s|$HOME/.passw
 nohup bash -c "(
 ps x | grep \"sleep $sleep_seconds\" | sort -k5 | grep -v grep | awk '{print \$1}' | xargs -I %s -- kill %s;
 tmux -c \"sleep $sleep_seconds;  echo \"\" | clip.exe\" &
-)"
+)" 2>/dev/null
