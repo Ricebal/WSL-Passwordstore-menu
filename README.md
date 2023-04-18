@@ -1,4 +1,4 @@
-# WSL-Passwordstore-menu
+# WSL-passwordstore-menu
 Small shell script to run menu that can select a password from your password store and copy it to the clipboard, clearing the clipboard after 45 seconds.
 Expects your passwords to be stored in the default pass directory in the .gpg format and the password to be the first line in the file.
 
