@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 sleep_seconds=45
 pass "$(find $HOME/.password-store/ -type f -iname "*.gpg" | sed "s|$HOME/.password-store/||g" | sed 's/.gpg//g' | fzf)" | head -n1 | clip.exe
 nohup bash -c "(
