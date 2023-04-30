@@ -6,12 +6,20 @@ Accepts custom password directory with exported `PASSWORD_STORE_DIR` variable.
 ## Usage
 To change the time before the clipboard clear edit the `sleep_seconds` variable.
 To run the script call: `wt -p Ubuntu bash /path/to/passmenu.sh` where `Ubuntu` is your installed WSL distro.
-You can run the script from an [AutoHotKey](https://www.autohotkey.com/) script like this:
+You can run the script from an [AutoHotKey](https://www.autohotkey.com/) script if you're running bash like this:
 ```
 <#+p::
 { 
 	Run("wt -p Ubuntu bash /path/to/passmenu.sh")
 	return
+}
+```
+Or otherwise if you're running any other shell such as ZSH:
+```
+<#+p::
+{ 
+Run('wt -p "Command Prompt" wsl ~/git/WSL-passwordstore-menu/passmenu.sh')
+return
 }
 ```
 Replacing <#+p with your desired keybind, this being super + shift + p.
