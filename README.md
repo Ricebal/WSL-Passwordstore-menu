@@ -4,7 +4,7 @@ Expects your passwords to be stored in the default pass directory in the .gpg fo
 Accepts custom password directory with exported `PASSWORD_STORE_DIR` variable.
 
 ## Usage
-To change the time before the clipboard clear edit the `sleep_seconds` variable.
+To change the time before the clipboard clear edit the `sleep_seconds` variable or export `PASSWORD_STORE_CLIP_TIME` in your prefered shell .rc file.
 To run the script call: `wt -p Ubuntu bash /path/to/passmenu.sh` where `Ubuntu` is your installed WSL distro.
 You can run the script from an [AutoHotKey](https://www.autohotkey.com/) script if you're running bash like this:
 ```
