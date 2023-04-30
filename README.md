@@ -18,8 +18,8 @@ Or otherwise if you're running any other shell such as ZSH:
 ```
 <#+p::
 { 
-Run('wt -p "Command Prompt" wsl ~/git/WSL-passwordstore-menu/passmenu.sh')
-return
+    Run('wt -p "Command Prompt" wsl ~/git/WSL-passwordstore-menu/passmenu.sh')
+    return
 }
 ```
 Replacing <#+p with your desired keybind, this being super + shift + p.
