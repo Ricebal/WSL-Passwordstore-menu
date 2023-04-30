@@ -10,8 +10,8 @@ You can run the script from an [AutoHotKey](https://www.autohotkey.com/) script 
 ```
 <#+p::
 { 
-	Run("wt -p Ubuntu bash /path/to/passmenu.sh")
-	return
+    Run("wt -p Ubuntu bash /path/to/passmenu.sh")
+    return
 }
 ```
 Or otherwise if you're running any other shell such as ZSH:
